@@ -20,15 +20,15 @@ def fib(n):
         return fib(n - 1) + fib(n - 2)
 
 
-def vetor_maioria(vet, index):
-    item_maioria = vet[index]
+def vetor_maioria(arry, index):
+    item_maioria = arry[index]
     count = 0
 
-    for item in vet:
+    for item in arry:
         if item == item_maioria:
             count = count + 1
 
-    if count > len(vet) / 2:
+    if count > len(arry) / 2:
         return True
 
     return False
