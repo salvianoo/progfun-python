@@ -1,5 +1,5 @@
 import unittest
-from progfun import *
+from progfun import factorial, fib, vetor_maioria
 
 
 class TestAlgoritmos(unittest.TestCase):
