@@ -23,9 +23,12 @@ def fib(n):
 def vetor_maioria(vet, index):
     item_maioria = vet[index]
     count = 0
+
     for item in vet:
-        if item_maioria == item:
+        if item == item_maioria:
             count = count + 1
-    if count > (len(vet) / 2):
+
+    if count > len(vet) / 2:
         return True
+
     return False
