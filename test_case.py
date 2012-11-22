@@ -4,6 +4,15 @@ from progfun import *
 
 class TestAlgoritmos(unittest.TestCase):
 
+    def test_factorial_de_zero(self):
+        self.assertEqual(1, factorial(0))
+
+    def test_factorial_de_um(self):
+        self.assertEqual(1, factorial(1))
+
+    def test_factorial_de_oito(self):
+        self.assertEqual(40320, factorial(8))
+
     def test_vetor_maioria_retorna_true(self):
         arr = [1, 1, 1, 1, 1, 2, 3, 4, 5]
         self.assertEqual(True, vetor_maioria(arr, 0))
