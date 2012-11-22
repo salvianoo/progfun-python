@@ -2,6 +2,6 @@
 
 ### Rodar os testes
 
-Abra o terminal e digite o seguinte comando
+Digite o seguinte comando no terminal:
 
     $ python test_case.py
