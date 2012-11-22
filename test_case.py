@@ -13,13 +13,17 @@ class TestAlgoritmos(unittest.TestCase):
     def test_factorial_de_oito(self):
         self.assertEqual(40320, factorial(8))
 
-    def test_vetor_maioria_retorna_true(self):
-        arr = [1, 1, 1, 1, 1, 2, 3, 4, 5]
+    def test_item_1_eh_maioria(self):
+        arr = [1, 1, 1, 1, 1, 3, 4, 5, 6]
         self.assertEqual(True, vetor_maioria(arr, 0))
 
-    def test_vetor_maioria_retorna_false(self):
-        arr = [1, 1, 1, 1, 2, 2, 2, 2]
+    def test_item_1_nao_eh_maioria(self):
+        arr = [1, 1, 1, 1, 2, 2, 2, 2, 2, 2]
         self.assertEqual(False, vetor_maioria(arr, 0))
+
+    def test_item_2_eh_maioria(self):
+        arr = [1, 1, 1, 1, 2, 2, 2, 2, 2, 2]
+        self.assertEqual(True, vetor_maioria(arr, 4))
 
     def test_fibonacci_de_zero(self):
         self.assertEqual(0, fib(0))
