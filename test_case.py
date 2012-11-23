@@ -15,15 +15,15 @@ class TestAlgoritmos(unittest.TestCase):
 
     def test_item_1_eh_maioria(self):
         arr = [1, 1, 1, 1, 1, 3, 4, 5, 6]
-        self.assertEqual(True, vetor_maioria(arr, 0))
+        self.assertEqual(True, vetor_maioria(arr, arr.index(1)))
 
     def test_item_1_nao_eh_maioria(self):
         arr = [1, 1, 1, 1, 2, 2, 2, 2, 2, 2]
-        self.assertEqual(False, vetor_maioria(arr, 0))
+        self.assertEqual(False, vetor_maioria(arr, arr.index(1)))
 
     def test_item_2_eh_maioria(self):
         arr = [1, 1, 1, 1, 2, 2, 2, 2, 2, 2]
-        self.assertEqual(True, vetor_maioria(arr, 4))
+        self.assertEqual(True, vetor_maioria(arr, arr.index(2)))
 
     def test_fibonacci_de_zero(self):
         self.assertEqual(0, fib(0))
