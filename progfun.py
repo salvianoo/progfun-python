@@ -27,5 +27,4 @@ def vetor_maioria(arr, index):
 
 def div_by_three_or_five(arr):
     cond = lambda el: el % 3 == 0 or el % 5 == 0
-    return reduce(lambda res, el: res + el,
-            filter(cond, arr))
+    return reduce(lambda res, el: res + el, filter(cond, arr))
