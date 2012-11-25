@@ -20,15 +20,12 @@ def fib(n):
         return fib(n - 1) + fib(n - 2)
 
 
-def vetor_maioria(arry, index):
-    item_maioria = arry[index]
-    count = 0
+def vetor_maioria(arr, index):
+    arr_maioria = filter(lambda i: i == arr[index], arr)
+    return len(arr_maioria) > len(arr) / 2
 
-    for item in arry:
-        if item == item_maioria:
-            count = count + 1
 
-    if count > len(arry) / 2:
-        return True
-
-    return False
+def div_by_three_or_five(arr):
+    cond = lambda el: el % 3 == 0 or el % 5 == 0
+    return reduce(lambda res, el: res + el,
+            filter(cond, arr))
