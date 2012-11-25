@@ -1,5 +1,5 @@
 import unittest
-from progfun import factorial, fib, vetor_maioria
+from progfun import factorial, fib, vetor_maioria, div_by_three_or_five
 
 
 class TestAlgoritmos(unittest.TestCase):
@@ -36,6 +36,9 @@ class TestAlgoritmos(unittest.TestCase):
 
     def test_fibonacci_de_vinte(self):
         self.assertEqual(6765, fib(20))
+
+    def test_div_by_three_or_five_with_array_of_1000(self):
+        self.assertEqual(233168, div_by_three_or_five(range(1000)))
 
 if __name__ == "__main__":
     unittest.main()
