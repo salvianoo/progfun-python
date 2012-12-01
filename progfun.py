@@ -24,10 +24,12 @@ def fib(n):
 #     arr_maioria = filter(lambda i: i == arr[index], arr)
 #     return len(arr_maioria) > len(arr) / 2
 
+# def div_by_three_or_five(arr):
+    # cond = lambda el: el % 3 == 0 or el % 5 == 0
+    # return reduce(lambda res, el: res + el, filter(cond, arr))
 
 def div_by_three_or_five(arr):
-    cond = lambda el: el % 3 == 0 or el % 5 == 0
-    return reduce(lambda res, el: res + el, filter(cond, arr))
+    return sum([el for el in arr if el % 3 == 0 or el % 5 == 0])
 
 
 def primo(num, arr):
